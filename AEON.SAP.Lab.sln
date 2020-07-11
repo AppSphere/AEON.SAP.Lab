@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Converters", "AEON.SAP.Converters\AEON.SAP.Converters.csproj", "{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEON.SAP.Lab.ConvertExcelToXML", "AEON.SAP.Lab.ConvertExcelToXML", "{758504BF-70BD-4697-AFA3-6320C28A6F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.csproj", "{0C97A4C5-2374-41E2-BC73-207CAFEF7248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities\AEON.SAP.Lab.ConvertExcelToXML.Activities.csproj", "{62A5C1B4-4573-4AB0-9825-B1022DF15169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities.Design", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design.csproj", "{2250F387-5215-4145-ADB8-714EC9E584CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BF75712D-A884-4FC1-872D-D96C40C74824}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEON.SAP.Lab.XmlToDictionary", "AEON.SAP.Lab.XmlToDictionary", "{9D5D03D5-0D4C-4BBB-98B2-7712282863D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.csproj", "{82AED7BF-F714-480A-9769-FC200CD3020D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary.Activities", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities\AEON.SAP.Lab.XmlToDictionary.Activities.csproj", "{602D3BA9-2315-4EA1-AD52-8B219C1844A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary.Activities.Design", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities.Design\AEON.SAP.Lab.XmlToDictionary.Activities.Design.csproj", "{7476AB74-A60E-4999-9846-2DE57D393D02}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{2250f387-5215-4145-adb8-714ec9e584cc}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{602d3ba9-2315-4ea1-ad52-8b219c1844a6}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{62a5c1b4-4573-4ab0-9825-b1022df15169}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{7476ab74-a60e-4999-9846-2de57d393d02}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C97A4C5-2374-41E2-BC73-207CAFEF7248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C97A4C5-2374-41E2-BC73-207CAFEF7248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C97A4C5-2374-41E2-BC73-207CAFEF7248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C97A4C5-2374-41E2-BC73-207CAFEF7248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A5C1B4-4573-4AB0-9825-B1022DF15169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A5C1B4-4573-4AB0-9825-B1022DF15169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A5C1B4-4573-4AB0-9825-B1022DF15169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A5C1B4-4573-4AB0-9825-B1022DF15169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2250F387-5215-4145-ADB8-714EC9E584CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2250F387-5215-4145-ADB8-714EC9E584CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2250F387-5215-4145-ADB8-714EC9E584CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2250F387-5215-4145-ADB8-714EC9E584CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AED7BF-F714-480A-9769-FC200CD3020D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AED7BF-F714-480A-9769-FC200CD3020D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AED7BF-F714-480A-9769-FC200CD3020D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AED7BF-F714-480A-9769-FC200CD3020D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602D3BA9-2315-4EA1-AD52-8B219C1844A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602D3BA9-2315-4EA1-AD52-8B219C1844A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602D3BA9-2315-4EA1-AD52-8B219C1844A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602D3BA9-2315-4EA1-AD52-8B219C1844A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7476AB74-A60E-4999-9846-2DE57D393D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7476AB74-A60E-4999-9846-2DE57D393D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7476AB74-A60E-4999-9846-2DE57D393D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7476AB74-A60E-4999-9846-2DE57D393D02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C97A4C5-2374-41E2-BC73-207CAFEF7248} = {758504BF-70BD-4697-AFA3-6320C28A6F8E}
+		{62A5C1B4-4573-4AB0-9825-B1022DF15169} = {758504BF-70BD-4697-AFA3-6320C28A6F8E}
+		{2250F387-5215-4145-ADB8-714EC9E584CC} = {758504BF-70BD-4697-AFA3-6320C28A6F8E}
+		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {BF75712D-A884-4FC1-872D-D96C40C74824}
+		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {BF75712D-A884-4FC1-872D-D96C40C74824}
+		{82AED7BF-F714-480A-9769-FC200CD3020D} = {9D5D03D5-0D4C-4BBB-98B2-7712282863D8}
+		{602D3BA9-2315-4EA1-AD52-8B219C1844A6} = {9D5D03D5-0D4C-4BBB-98B2-7712282863D8}
+		{7476AB74-A60E-4999-9846-2DE57D393D02} = {9D5D03D5-0D4C-4BBB-98B2-7712282863D8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {477F6D64-21E4-4441-9F78-4CBCF16D5593}
+	EndGlobalSection
+EndGlobal
