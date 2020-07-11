@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>AEON.SAP.Lab.ConvertExcelToXML.Activities</RootNamespace>
@@ -8,8 +8,18 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\AEON.SAP.Lab.ConvertExcelToXML.Activities.xml</DocumentationFile>
+    <Version>1.0.3.0</Version>
+    <Company>Aeon Softwares Inc</Company>
+    <Authors>Aashish Patil</Authors>
+    <Description>This Activity is created to convert the SAP BAPI Process Excel to XMLs</Description>
+    <Copyright>Aeon Software Inc</Copyright>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
   </PropertyGroup>
 	<ItemGroup>
+		<Reference Include="AEON.SAP.Converters">
+		  <HintPath>..\..\AEON.SAP.Converters\bin\Debug\netstandard2.0\AEON.SAP.Converters.dll</HintPath>
+		  <Private>true</Private>
+		</Reference>
 		<Reference Include="System" />
 		
 		<Reference Include="System.Core" />
@@ -27,7 +37,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AEON.SAP.Converters\AEON.SAP.Converters.csproj" />
     <ProjectReference Include="..\AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>

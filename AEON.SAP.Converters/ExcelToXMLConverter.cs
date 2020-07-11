@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Packaging;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,8 +13,7 @@ namespace AEON.SAP.Converters
     public class ExcelToXMLConverter
     {
         public static List<string> attributes = new List<string>();
-        public static string filePath = "";
-        public static string sheetName = "";
+      
 
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace AEON.SAP.Converters
 
         private string GenerateXmlFile(string filePath, string processName, string xmlPath = "")
         {
-            var mainTableWithRules = ImportExceltoDatatable(filePath, sheetName);
+            var mainTableWithRules = ImportExceltoDatatable(filePath, processName);
             ////collect all the Attributes
             for (int rowCount = 1; rowCount < mainTableWithRules.Rows.Count; rowCount++)
             {
@@ -63,14 +63,14 @@ namespace AEON.SAP.Converters
             using (XmlWriter writer = XmlWriter.Create(xmlFileName))
             {
                 writer.WriteStartDocument();
-                CreateXMLNodes(writer, mainTableWithRules, sheetName);
+                CreateXMLNodes(writer, mainTableWithRules, filePath, processName);
                 writer.WriteEndDocument();
             }
 
             return xmlFileName;
         }
 
-        public void CreateXMLNodes(XmlWriter writer, DataTable mainTableWithRules, string sheetName, bool isChildren = false)
+        public void CreateXMLNodes(XmlWriter writer, DataTable mainTableWithRules,string filePath, string sheetName, bool isChildren = false)
         {
 
             if (!isChildren)
@@ -142,7 +142,7 @@ namespace AEON.SAP.Converters
                 {
                     // Now check the Sheets if this Exists
                     var children = ImportExceltoDatatable(filePath, tagRow[mainRowCol].ToString());
-                    CreateXMLNodes(writer, children, tagRow[mainRowCol].ToString(), true);
+                    CreateXMLNodes(writer, children, tagRow[mainRowCol].ToString(),filePath, true);
                     containsChildren = false;
 
                 }
@@ -168,6 +168,7 @@ namespace AEON.SAP.Converters
         {
             // Open the Excel file using ClosedXML.
             // Keep in mind the Excel file cannot be open when trying to read it
+   
             using (XLWorkbook workBook = new XLWorkbook(filePath))
             {
                 //Read the first Sheet from Excel file.

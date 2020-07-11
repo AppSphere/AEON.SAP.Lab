@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Converters", "AEON.SAP.Converters\AEON.SAP.Converters.csproj", "{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Converters", "AEON.SAP.Converters\AEON.SAP.Converters.csproj", "{B1C4E5FC-CBD2-4807-9EB1-6E3D3199B0B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEON.SAP.Lab.ConvertExcelToXML", "AEON.SAP.Lab.ConvertExcelToXML", "{758504BF-70BD-4697-AFA3-6320C28A6F8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.csproj", "{0C97A4C5-2374-41E2-BC73-207CAFEF7248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.ConvertExcelToXML", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.csproj", "{0C97A4C5-2374-41E2-BC73-207CAFEF7248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities\AEON.SAP.Lab.ConvertExcelToXML.Activities.csproj", "{62A5C1B4-4573-4AB0-9825-B1022DF15169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities\AEON.SAP.Lab.ConvertExcelToXML.Activities.csproj", "{62A5C1B4-4573-4AB0-9825-B1022DF15169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities.Design", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design.csproj", "{2250F387-5215-4145-ADB8-714EC9E584CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.ConvertExcelToXML.Activities.Design", "AEON.SAP.Lab.ConvertExcelToXML\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design\AEON.SAP.Lab.ConvertExcelToXML.Activities.Design.csproj", "{2250F387-5215-4145-ADB8-714EC9E584CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BF75712D-A884-4FC1-872D-D96C40C74824}"
 EndProject
@@ -21,11 +21,13 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.De
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEON.SAP.Lab.XmlToDictionary", "AEON.SAP.Lab.XmlToDictionary", "{9D5D03D5-0D4C-4BBB-98B2-7712282863D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.csproj", "{82AED7BF-F714-480A-9769-FC200CD3020D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.XmlToDictionary", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.csproj", "{82AED7BF-F714-480A-9769-FC200CD3020D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary.Activities", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities\AEON.SAP.Lab.XmlToDictionary.Activities.csproj", "{602D3BA9-2315-4EA1-AD52-8B219C1844A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.XmlToDictionary.Activities", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities\AEON.SAP.Lab.XmlToDictionary.Activities.csproj", "{602D3BA9-2315-4EA1-AD52-8B219C1844A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEON.SAP.Lab.XmlToDictionary.Activities.Design", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities.Design\AEON.SAP.Lab.XmlToDictionary.Activities.Design.csproj", "{7476AB74-A60E-4999-9846-2DE57D393D02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEON.SAP.Lab.XmlToDictionary.Activities.Design", "AEON.SAP.Lab.XmlToDictionary\AEON.SAP.Lab.XmlToDictionary.Activities.Design\AEON.SAP.Lab.XmlToDictionary.Activities.Design.csproj", "{7476AB74-A60E-4999-9846-2DE57D393D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{07F41DDE-D1B5-46E5-88D2-3B890995F366}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -69,6 +71,10 @@ Global
 		{7476AB74-A60E-4999-9846-2DE57D393D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7476AB74-A60E-4999-9846-2DE57D393D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7476AB74-A60E-4999-9846-2DE57D393D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F41DDE-D1B5-46E5-88D2-3B890995F366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F41DDE-D1B5-46E5-88D2-3B890995F366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F41DDE-D1B5-46E5-88D2-3B890995F366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F41DDE-D1B5-46E5-88D2-3B890995F366}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,9 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\AEON.SAP.Lab.XmlToDictionary.Activities.xml</DocumentationFile>
+    <Company>Aeon Software Inc</Company>
+    <Version>1.0.1</Version>
+    <Authors>Aashish Patil</Authors>
   </PropertyGroup>
 	<ItemGroup>
 		<Reference Include="System" />
