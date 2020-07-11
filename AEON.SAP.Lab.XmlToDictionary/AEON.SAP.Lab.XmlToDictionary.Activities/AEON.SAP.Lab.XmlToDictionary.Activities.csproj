@@ -9,10 +9,10 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\AEON.SAP.Lab.XmlToDictionary.Activities.xml</DocumentationFile>
     <Company>Aeon Software Inc</Company>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <Authors>Aashish Patil</Authors>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
   </PropertyGroup>
 	<ItemGroup>
 		<Reference Include="System" />
