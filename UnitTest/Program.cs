@@ -8,7 +8,11 @@ namespace UnitTest
         static void Main(string[] args)
         {
             ExcelToXMLConverter excelToXMLConverter = new ExcelToXMLConverter();
-            excelToXMLConverter.ConvertExcelToXMLDocument("BAPI_SALESORDER_CREATEFROMDAT2.xlsx", "BAPI_SALESORDER_CREATEFROMDAT2");
+            var xmlDocument = excelToXMLConverter.ConvertExcelToXMLDocument("BAPI_SALESORDER_CREATEFROMDAT2.xlsx", "BAPI_SALESORDER_CREATEFROMDAT2");
+            SAPXmlConverter sAPXmlConverter = new SAPXmlConverter();
+            var output = sAPXmlConverter.ProcessXMLForSAPBapi("", xmlDocument);
+        
+        
         }
     }
 }

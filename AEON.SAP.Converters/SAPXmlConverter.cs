@@ -24,13 +24,14 @@ namespace AEON.SAP.Converters
         /// <param name="xmlFilePath">XML File Path</param>
         /// <param name="xmlDocument">XMl Document</param>
         /// <returns>Dictionay of DataTable</returns>
-        public Dictionary<string, DataTable> ProcessXMLForSAPBapi(string xmlFilePath = "", XDocument xmlDocument = null)
+        public Dictionary<string, DataTable> ProcessXMLForSAPBapi(string xmlFilePath = "", XmlDocument xmlDoc = null)
         {
             var output = new Dictionary<string, DataTable>();
             try
             {
-                if (xmlDocument != null)
+                if (xmlDoc != null)
                 {
+                    var xmlDocument = xmlDoc.ToXDocument();
                     return this.ProcessXmlToDictionaryUsingXDocument(xmlDocument, output);
                 }
                 else if (!string.IsNullOrEmpty(xmlFilePath))
@@ -94,7 +95,7 @@ namespace AEON.SAP.Converters
 
                 var DT_BAPI_Parameters = ParseNonDataRowDataTableNodes(output, root);
                 output.Add("DT_BAPI_Parameters", DT_BAPI_Parameters);
-                ParseDataTableNodes(output, root, "DataTable", "DataTable");
+                ParseDataTableNodes(output, root, "DataTable", "DataTable/*");
                 ParseDataTableNodes(output, root, "DataRow", "row");
 
                 // Outputs

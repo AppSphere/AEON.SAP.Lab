@@ -36,7 +36,7 @@ namespace AEON.SAP.Lab.XmlToDictionary.Activities
         [LocalizedDisplayName(nameof(Resources.ProcessXMLForSAPBAPI_XMLDocument_DisplayName))]
         [LocalizedDescription(nameof(Resources.ProcessXMLForSAPBAPI_XMLDocument_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<XDocument> XMLDocument { get; set; }
+        public InArgument<XmlDocument> XMLDocument { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.ProcessXMLForSAPBAPI_Dictionary_DisplayName))]
         [LocalizedDescription(nameof(Resources.ProcessXMLForSAPBAPI_Dictionary_Description))]
@@ -68,9 +68,11 @@ namespace AEON.SAP.Lab.XmlToDictionary.Activities
             // Inputs
             var pathToXML = PathToXML.Get(context);
             var xmlDocument = XMLDocument.Get(context);
-          
+
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(xmlDocument.InnerXml);
             SAPXmlConverter sapXmlConverter = new SAPXmlConverter();
-            var dictionary = sapXmlConverter.ProcessXMLForSAPBapi(pathToXML, xmlDocument);
+            var dictionary = sapXmlConverter.ProcessXMLForSAPBapi(pathToXML, xmlDoc);
 
             // Outputs
             return (ctx) => {
