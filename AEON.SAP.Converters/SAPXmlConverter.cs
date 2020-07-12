@@ -306,16 +306,20 @@ namespace AEON.SAP.Converters
         /// <param name="column">Table Column</param>
         private void GetNodeLength(XElement xNode, DataColumn column)
         {
-            // Check the Length
-            string xlength = xNode.Attribute("Length").Value;
-            int length = 0;
-            if (!string.IsNullOrEmpty(xlength))
+            var type = column.DataType;
+            if (type == typeof(string))
             {
-                length = Int32.Parse(xlength);
-                if (length > 1)
+                // Check the Length
+                string xlength = xNode.Attribute("Length").Value;
+                int length = 0;
+                if (!string.IsNullOrEmpty(xlength))
                 {
-                    column.MaxLength = length;
+                    length = Int32.Parse(xlength);
+                    if (length > 1)
+                    {
+                        column.MaxLength = length;
 
+                    }
                 }
             }
         }
