@@ -343,6 +343,8 @@ namespace AEON.SAP.Converters
             {
                 case "int": return typeof(Int32);
                 case "string": return typeof(string);
+                case "datetime": return typeof(DateTime);
+                case "decimal": return typeof(decimal);
 
             }
 
